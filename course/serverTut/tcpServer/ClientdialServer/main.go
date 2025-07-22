@@ -1,0 +1,25 @@
+// broken code
+
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+	"net"
+)
+
+func main() {
+	conn, err := net.Dial("tcp", ":8000")
+	if err != nil {
+		panic(err)
+	}
+	defer conn.Close()
+
+	bs, err := ioutil.ReadAll(conn)
+	if err != nil {
+		log.Println(err)
+	}
+
+	fmt.Println(string(bs))
+}
