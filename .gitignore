@@ -1,0 +1,59 @@
+# Binaries
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+
+*.test
+
+# Coverage reports
+
+*.out
+coverage.out
+
+# Go workspace
+
+go.work
+go.work.sum
+
+# Dependency directories (usually not needed for Go modules)
+
+vendor/
+
+# Build directories
+
+bin/
+dist/
+build/
+
+# IDE - VS Code
+
+.vscode/
+
+# IDE - JetBrains
+
+.idea/
+*.iml
+
+# Vim
+
+*.swp
+*.swo
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Environment files
+
+.env
+.env.*
+
+# Logs
+
+*.log
