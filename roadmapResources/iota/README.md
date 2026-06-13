@@ -2,7 +2,7 @@
 
 `iota` is a predeclared identifier in Go that is used inside `const` declarations to create auto-incrementing constant values.
 
----
+## Good resource : [Constant & Iota](https://webreference.com/go/basics/constants/)
 
 ## Important Rules
 

@@ -1,0 +1,1 @@
+Performance — On 64-bit systems, using int or uint can be faster than the smaller types due to the alignment with the machine's word size.

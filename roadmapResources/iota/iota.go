@@ -1,11 +1,14 @@
-package iotaPkg
+// Package iotapkg demonstrates the use of iota for creating enumerations in Go.
+// It shows various patterns of using iota for constant value assignment.
+package iotapkg
 
 import "fmt"
 
 type weekday int
 
-// for any doubt regarding const and value assignment.. 
-// read constantPkg
+// The code below demonstrates usagage of iota and const to perform auto-incrementing
+// In case of any doubt, refer the constantpkg
+
 const (
 	Sunday weekday = iota + 1 // iota(0) + 1 --> 1
 	// commented line
@@ -17,6 +20,7 @@ const (
 	Thursday weekday = iota // iota  = 7
 )
 
+// IotaConstant demonstrates iota usage within a const block.
 func IotaConstant() {
 	fmt.Println(Sunday)
 	fmt.Println(Monday)
@@ -25,6 +29,7 @@ func IotaConstant() {
 	fmt.Println(Thursday)
 }
 
+// IotaOutsideConst demonstrates that iota is reset to 0 outside of a const block.
 func IotaOutsideConst() {
 	// since this is not in const block iota will be 0 and will not increment
 	const num1 int = iota * 1;
