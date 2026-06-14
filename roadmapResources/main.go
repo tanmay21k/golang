@@ -4,7 +4,7 @@ package main
 
 import (
 	constantpkg "github.com/tanmay21k/golang/roadmapResources/constantPkg"
-	iotapkg "github.com/tanmay21k/golang/roadmapResources/iota"
+	iotapkg "github.com/tanmay21k/golang/roadmapResources/iotaPkg"
 )
 
 func main() {
