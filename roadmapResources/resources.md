@@ -5,3 +5,6 @@ Performance — On 64-bit systems, using int or uint can be faster than the smal
 [channels](https://blog.devtrovert.com/p/select-and-for-range-channel-i-bet)
 
 [iterators](https://blog.alexoglou.com/posts/iterators-golang/)
+
+[go-memory-model](https://go.dev/ref/mem)
+[garbage collection](https://tip.golang.org/doc/gc-guide)
