@@ -2,6 +2,8 @@ Just reading about interfaces and implementing them once or twice does not reall
 
 Here is the idiomatic way of implementing the interfaces **WHEN THE TIME IS RIGHT!!**
 
+> ps this is where the magical `any` came from... empty interface{}
+
 ### 1. Create structs according to the requirement
 
 ```go
@@ -66,6 +68,12 @@ func purchasePrecheck(f financeOperations, amount int) {
     fmt.Println("BROKE")
 }
 ```
+
+> What a weak example dear brain..
+
+The interface can be consumed by any datatype need not be the function.
+
+The interace can also be consumed by a struct, here is the example [interface-article](https://abubakardev0.medium.com/mastering-go-interfaces-from-basics-to-best-practices-36912b65aa3d)
 
 ```go
 // main.go
